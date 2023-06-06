@@ -1,0 +1,9 @@
+<?php
+   session_start();
+   session_destroy();
+   session_unset($_SESSION['SESS_MEMBER_ID']);
+   session_unset($_SESSION['SESS_FIRST_NAME']);
+   session_unset($_SESSION['SESS_LAST_NAME']);
+   header("Location:index.php");
+   die();
+?>
